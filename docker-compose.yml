@@ -1,0 +1,10 @@
+version: '2'
+services:
+  fino-go:
+    build: .
+    volumes:
+      - ./:/go/src/github.com/SimonRininsland/gofino
+    ports:
+      - "1323:1323"
+    environment:
+      - TEST_ENV=test
